@@ -1,4 +1,12 @@
 <app-header />
 <ion-content class="ion-padding">
-  <h2>{{ texts.title }}</h2>
+  <div class="page-title">
+    <ion-icon class="page-title__icon" name="cube-outline" />
+    <h2 class="page-title__text">{{ texts.title }}</h2>
+  </div>
+  <div class="menu-grid">
+    @for (item of menuItems; track item.route) {
+      <app-items-menu-item [item]="item" (selected)="onSelect($event)" />
+    }
+  </div>
 </ion-content>

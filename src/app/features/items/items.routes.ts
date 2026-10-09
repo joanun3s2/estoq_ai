@@ -10,4 +10,20 @@ export const ITEMS_ROUTES: Routes = [
         (m) => m.ItemsPage,
       ),
   },
+  {
+    path: 'add',
+    data: { title: ITEMS_TEXTS.menu.addItem },
+    loadComponent: () =>
+      import('@app/features/items/pages/add-item/add-item.page').then(
+        (m) => m.AddItemPage,
+      ),
+  },
+  {
+    path: 'edit',
+    data: { title: ITEMS_TEXTS.menu.modifyItems },
+    loadComponent: () =>
+      import('@app/features/items/pages/edit-item/edit-item.page').then(
+        (m) => m.EditItemPage,
+      ),
+  },
 ];
