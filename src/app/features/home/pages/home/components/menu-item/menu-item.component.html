@@ -1,0 +1,4 @@
+<button type="button" class="menu-item" (click)="selected.emit(item())">
+  <ion-icon class="menu-item__icon" [name]="item().icon" />
+  <span class="menu-item__title">{{ item().title }}</span>
+</button>

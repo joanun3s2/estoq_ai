@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      @if (isHome) {
+        <ion-button aria-label="Início" (click)="goHome()">
+          <ion-icon slot="icon-only" name="home-outline" />
+        </ion-button>
+      } @else {
+        <ion-button aria-label="Voltar" (click)="goBack()">
+          <ion-icon slot="icon-only" name="arrow-back-outline" />
+        </ion-button>
+      }
+    </ion-buttons>
+    <ion-title>{{ title }}</ion-title>
+  </ion-toolbar>
+</ion-header>

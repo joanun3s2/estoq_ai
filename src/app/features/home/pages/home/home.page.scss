@@ -1,0 +1,13 @@
+:host {
+  display: block;
+  height: 100%;
+  --menu-item-size: 140px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, var(--menu-item-size));
+  gap: 1rem;
+  justify-content: center;
+  align-content: start;
+}

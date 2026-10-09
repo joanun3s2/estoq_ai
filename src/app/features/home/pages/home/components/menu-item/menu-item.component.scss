@@ -1,0 +1,31 @@
+:host {
+  display: block;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-sizing: border-box;
+  width: var(--menu-item-size, 8rem);
+  height: var(--menu-item-size, 8rem);
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--ion-color-light);
+  color: var(--ion-color-dark);
+  cursor: pointer;
+
+  &__icon {
+    font-size: 2.5rem;
+    color: var(--ion-color-primary);
+  }
+
+  &__title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: center;
+  }
+}

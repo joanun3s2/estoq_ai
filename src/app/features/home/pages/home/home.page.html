@@ -1,0 +1,8 @@
+<app-header />
+<ion-content class="ion-padding">
+  <div class="menu-grid">
+    @for (item of menuItems; track item.route) {
+      <app-menu-item [item]="item" (selected)="onSelect($event)" />
+    }
+  </div>
+</ion-content>

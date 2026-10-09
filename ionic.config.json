@@ -1,0 +1,7 @@
+{
+  "name": "estoq_ai",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
