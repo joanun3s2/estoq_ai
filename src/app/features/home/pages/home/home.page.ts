@@ -8,6 +8,8 @@ import { MenuItem } from '@app/features/home/models/menu-item.model';
 import { AppHeaderComponent } from '@app/shared/components/app-header/app-header.component';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
 
+addIcons({ cashOutline, cubeOutline, receiptOutline });
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
@@ -30,10 +32,6 @@ export class HomePage {
       route: '/sales',
     },
   ];
-
-  constructor() {
-    addIcons({ cashOutline, cubeOutline, receiptOutline });
-  }
 
   onSelect(item: MenuItem): void {
     this.router.navigateByUrl(item.route);

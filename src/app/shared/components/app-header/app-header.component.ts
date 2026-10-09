@@ -12,6 +12,8 @@ import {
 import { addIcons } from 'ionicons';
 import { arrowBackOutline, homeOutline } from 'ionicons/icons';
 
+addIcons({ arrowBackOutline, homeOutline });
+
 @Component({
   selector: 'app-header',
   templateUrl: './app-header.component.html',
@@ -26,10 +28,6 @@ export class AppHeaderComponent {
   readonly title =
     (this.route.snapshot.data['title'] as string | undefined) ?? '';
   readonly isHome = this.route.snapshot.data['home'] === true;
-
-  constructor() {
-    addIcons({ arrowBackOutline, homeOutline });
-  }
 
   goHome(): void {
     this.router.navigateByUrl('/home');
